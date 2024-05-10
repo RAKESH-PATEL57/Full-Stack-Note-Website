@@ -2,4 +2,67 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body
+{
+  min-height: 100vh;
+}
+
+// Header section [[[[  ** start ** ]] styled By https://github.com/RAKESH-PATEL57 **************  ]]]]
+.header-container
+{
+    padding: .5rem 1rem;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header ul
+{
+    display: flex;
+}
+
+ul li
+{
+    padding: 0rem .5rem;
+}
+
+header .btns
+{
+    display: flex;
+    gap: .5rem;
+}
+
+.btns .btn
+{
+    border: 1px solid rgba(0, 0, 255, 0.849);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 255, 0.849);
+}
+
+.btn:nth-child(2)
+{
+    background: rgba(0, 0, 255, 0.849);
+    color: white;
+    transition: .3s linear;
+}
+
+.btn:nth-child(1):hover
+{
+    background: rgba(0, 0, 255, 0.849);
+    color: white;
+}
+
+.btn:nth-child(2):hover
+{
+    color: rgba(0, 0, 255, 0.849);
+    background: white;
 }
