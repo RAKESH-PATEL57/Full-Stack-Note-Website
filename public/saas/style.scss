@@ -2,8 +2,12 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
     list-style: none;
+}
+
+a
+{
+    text-decoration: none;
 }
 
 body
@@ -66,3 +70,44 @@ header .btns
     color: rgba(0, 0, 255, 0.849);
     background: white;
 }
+
+// Header section [[[[  ** end ** ]] styled By https://github.com/RAKESH-PATEL57 **************  ]]]]
+
+// Footer section [[[[  ** start ** ]] styled By https://github.com/RAKESH-PATEL57 **************  ]]]]
+.footer-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 15rem;
+    border: 2px solid aqua;
+}
+
+.footer-container footer
+{
+   position: absolute;
+   width: 80%;
+   height: 90%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+footer .footer-top
+{
+    display: flex;
+    // position: absolute;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-top .contact-details
+{
+    display: flex;
+    flex-direction: column;
+}
+
+// Footer section [[[[  ** end ** ]] styled By https://github.com/RAKESH-PATEL57 **************  ]]]]
