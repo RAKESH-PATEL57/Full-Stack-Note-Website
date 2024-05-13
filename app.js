@@ -33,6 +33,12 @@ app.set('view engine', 'ejs');
 app.use('/', require('./server/routes/index'));
 
 
+// Handle 404 error
+app.get('*', function(req, res){
+    // res.status(404).send("404 Page Not Found.");
+    res.status(404).render('404');
+});
+
 app.listen(port, () => {
     console.log(`App listening on port http://localhost:${port}`);
 });
