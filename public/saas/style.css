@@ -5,12 +5,18 @@
   list-style: none;
 }
 
-a {
-  text-decoration: none;
+:root {
+  --bg-color:white;
+  --alpha-primary-color:rgba(0, 0, 255, 0.849);
+  --ffont-color:white;
 }
 
 body {
   min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header-container {
@@ -37,27 +43,32 @@ header .btns {
 }
 
 .btns .btn {
-  border: 1px solid rgba(0, 0, 255, 0.849);
+  border: 1px solid var(--alpha-primary-color);
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgba(0, 0, 255, 0.849);
+  color: var(--alpha-primary-color);
 }
 
 .btn:nth-child(2) {
-  background: rgba(0, 0, 255, 0.849);
-  color: white;
+  background: var(--alpha-primary-color);
+  color: var(--ffont-color);
   transition: 0.3s linear;
 }
 
 .btn:nth-child(1):hover {
-  background: rgba(0, 0, 255, 0.849);
-  color: white;
+  background: var(--alpha-primary-color);
+  color: var(--ffont-color);
 }
 
 .btn:nth-child(2):hover {
-  color: rgba(0, 0, 255, 0.849);
-  background: white;
+  color: var(--alpha-primary-color);
+  background: var(--ffont-color);
+}
+
+.searchForm input {
+  width: 60%;
+  /* border: 2px solid red; */
 }
 
 .footer-container {
@@ -67,7 +78,7 @@ header .btns {
   position: relative;
   width: 100%;
   min-height: 15rem;
-  border: 2px solid aqua;
+  /* border: 2px solid aqua; */
 }
 
 .footer-container footer {
