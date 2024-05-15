@@ -9,12 +9,12 @@
 {
   --bg-color:white;
   --alpha-primary-color:rgba(0, 0, 255, 0.849);
-
   --ffont-color:white;
 }
 
 body {
   min-height: 100vh;
+  background: var(--bg-color);
 }
 
 // Header section [[[[  ** start ** ]] styled By https://github.com/RAKESH-PATEL57 **************  ]]]]
