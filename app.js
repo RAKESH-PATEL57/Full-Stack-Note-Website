@@ -1,10 +1,10 @@
 require('dotenv').config();
 
 const express = require('express');
-
 const expressLayouts = require('express-ejs-layouts');
-
 const app = express();
+
+const connectDB = require('./server/config/db');
 
 const port = 5000 || process.env.PORT;
 
@@ -12,6 +12,10 @@ const port = 5000 || process.env.PORT;
 //helps to pass data through forms and pages.
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+
+
+// Connect To Database 
+connectDB();
 
 //Static files
 app.use(express.static('public'));
@@ -31,6 +35,7 @@ app.set('view engine', 'ejs');
 
 //Routes
 app.use('/', require('./server/routes/index'));
+app.use('/', require('./server/routes/dashboard'));
 
 
 // Handle 404 error
