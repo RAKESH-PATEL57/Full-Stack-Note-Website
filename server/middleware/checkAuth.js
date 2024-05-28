@@ -1,5 +1,7 @@
 exports.isLoggedIn = function (req, res, next) {
-    if(req.user) {
+    // console.log(req);
+    if(req.users) {
+        // console.log('rakesh');
         next();
     }
     else
